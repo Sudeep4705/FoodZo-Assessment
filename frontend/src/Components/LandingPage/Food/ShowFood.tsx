@@ -16,7 +16,7 @@ export default function ShowFood() {
   const [food, setFood] = useState<FoodType[]>([]);
   useEffect(() => {
     const getdata = async () => {
-      const res = await axios.get("http://localhost:8080/food/show", {
+      const res = await axios.get("https://foodzo-assessment.onrender.com/food/show", {
         withCredentials: true,
       });
       setFood(res.data.info);
@@ -55,7 +55,7 @@ export default function ShowFood() {
     }
     const handlebtn = async()=>{
       try{
-    const res  = await axios.get("http://localhost:8080/food/order",{withCredentials:true})
+    const res  = await axios.get("https://foodzo-assessment.onrender.com/food/order",{withCredentials:true})
       toast.success(res.data.message)
       }
       catch(err:any){
