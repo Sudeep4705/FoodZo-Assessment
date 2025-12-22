@@ -15,7 +15,7 @@ export default function Support() {
   useEffect(() => {
     const getdata = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/admin/support", {
+        const res = await axios.get("https://foodzo-assessment.onrender.com/admin/support", {
           withCredentials: true,
         });
         setData(res.data.info);
@@ -27,7 +27,7 @@ export default function Support() {
   }, []);
 
   const handleDelete=async(id:any)=>{
-    const res = await axios.delete(`http://localhost:8080/admin/support/delete/${id}`)
+    const res = await axios.delete(`https://foodzo-assessment.onrender.com/admin/support/delete/${id}`)
     toast.success(res.data.message)
   }
 

@@ -13,7 +13,7 @@ export default function Signup(){
     }
     const handleSubmit = async(e:FormEvent)=>{
         e.preventDefault()
-        const res = await axios.post("http://localhost:8080/user/signup",user,{withCredentials:true})
+        const res = await axios.post("https://foodzo-assessment.onrender.com/user/signup",user,{withCredentials:true})
         toast.success(res.data.message)
 
     }

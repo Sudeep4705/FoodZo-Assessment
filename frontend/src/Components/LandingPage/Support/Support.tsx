@@ -15,7 +15,7 @@ export default function Support() {
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:8080/user/support", form);
+            const res = await axios.post("https://foodzo-assessment.onrender.com/user/support", form);
             toast.success(res.data.message);
             setForm({ name: "", email: "", message: "" }); 
         } catch (error) {

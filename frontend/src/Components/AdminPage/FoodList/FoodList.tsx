@@ -15,7 +15,7 @@ export default function FoodList() {
     const [food, setFood] = useState<FoodType[]>([]);
     useEffect(() => {
         const getdata = async () => {
-            const res = await axios.get("http://localhost:8080/food/show", {
+            const res = await axios.get("https://foodzo-assessment.onrender.com/food/show", {
                 withCredentials: true,
             });
             setFood(res.data.info);
@@ -57,7 +57,7 @@ export default function FoodList() {
     }
 
     const handleDelete=async(id:string)=>{
-        const res = await axios.delete(`http://localhost:8080/food/delete/${id}`)
+        const res = await axios.delete(`https://foodzo-assessment.onrender.com/food/delete/${id}`)
         toast.success(res.data.message)
     }
 return (

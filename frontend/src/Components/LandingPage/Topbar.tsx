@@ -10,14 +10,14 @@ export default function Navbar() {
 
 	useEffect(() => {
 		const getdata = async () => {
-			const res = await axios.get("http://localhost:8080/user/verify", { withCredentials: true })
+			const res = await axios.get("https://foodzo-assessment.onrender.com/user/verify", { withCredentials: true })
 			setisloggedIn(res.data.isloggedIn)
 		}
 		getdata()
 	}, [])
 
 	const handlelogout = async () => {
-		const res = await axios.post("http://localhost:8080/user/logout", {}, { withCredentials: true })
+		const res = await axios.post("https://foodzo-assessment.onrender.com/user/logout", {}, { withCredentials: true })
 		setisloggedIn(res.data.isloggedIn)
 	}
 	return (

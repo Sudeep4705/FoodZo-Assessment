@@ -14,7 +14,7 @@ export default function ShowList() {
 
     useEffect(()=>{
        const getdata = async()=>{
-        const res = await axios.get(`http://localhost:8080/food/edit/${id}`)
+        const res = await axios.get(`https://foodzo-assessment.onrender.com/food/edit/${id}`)
          setFood(res.data.info)
         }
         getdata()
@@ -42,7 +42,7 @@ export default function ShowList() {
         }
 
         try {
-            const res = await axios.put(`http://localhost:8080/food/edit/${id}`, form, {
+            const res = await axios.put(`https://foodzo-assessment.onrender.com/food/edit/${id}`, form, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

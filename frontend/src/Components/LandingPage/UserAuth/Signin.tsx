@@ -14,7 +14,7 @@ export default function Login(){
     }
     const handleSubmit = async(e:FormEvent)=>{
         e.preventDefault()
-        const res = await axios.post("http://localhost:8080/user/login",user,{withCredentials:true})
+        const res = await axios.post("https://foodzo-assessment.onrender.com/user/login",user,{withCredentials:true})
         toast.success(res.data.message)
         setTimeout(()=>{
             navigate("/")

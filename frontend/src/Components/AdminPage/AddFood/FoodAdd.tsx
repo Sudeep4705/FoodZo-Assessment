@@ -32,7 +32,7 @@ export default function AddFood() {
         }
 
         try {
-            const res = await axios.post("http://localhost:8080/food/add", form, {
+            const res = await axios.post("https://foodzo-assessment.onrender.com/food/add", form, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

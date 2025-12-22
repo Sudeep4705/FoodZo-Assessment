@@ -22,7 +22,7 @@ async function Main(url: string) {
 }
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.use(cors({origin:"http://localhost:5173",credentials:true}))
+app.use(cors({origin:["http://localhost:5173","https://food-zo.netlify.app/"],credentials:true}))
 app.use(cookieParser())
 
 // Routes
