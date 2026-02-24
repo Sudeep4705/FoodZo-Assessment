@@ -53,7 +53,7 @@ export default function Hero() {
                     <i>FoodZo</i>
                 </motion.h1>
                
-                <motion.p className="text-2xl" variants={childvariant}>
+                <motion.p className="text-2xl text-white" variants={childvariant}>
                     Experience fast & easy online ordering
                     on the FoodZo
                 </motion.p>
