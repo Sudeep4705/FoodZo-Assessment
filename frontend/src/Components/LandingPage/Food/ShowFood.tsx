@@ -91,7 +91,7 @@ export default function ShowFood() {
                     <i>FoodZo</i>
                 </motion.h1>
                
-                <motion.p className="text-2xl" variants={childvariant}>
+                <motion.p className="text-2xl text-white" variants={childvariant}>
                     Order Your Food Now
                 </motion.p>
                  
