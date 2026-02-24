@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className="main-sec flex justify-evenly mb-20">
                     <div className="section pl-30">
                         <div className="sub1">
-                            <h1 className="text-xl p-1 mb-3">Eternal</h1>
+                            <h1 className="text-xl p-1 mb-3 text-white">Eternal</h1>
                             <ul>
                                 <li className="list-none text-gray-400 p-1"><a href="" className="">Zomato</a></li>
                                 <li className="list-none text-gray-400 p-1"><a href="" className="">Blinkit</a></li>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
                     <div className="section pl-30">
                         <div className="sub1">
-                            <h1 className="text-xl p-1 mb-3">Learn More</h1>
+                            <h1 className="text-xl p-1 mb-3 text-white">Learn More</h1>
                             <ul>
                                 <li className="list-none text-gray-400 p-1"><a href="" className="">Privacy</a></li>
                                 <li className="list-none text-gray-400 p-1"><a href="" className="">Security</a></li>
@@ -37,7 +37,7 @@ export default function Footer() {
                     </div>
                     <div className="section pl-30">
                         <div className="sub1">
-                            <h1 className="text-xl p-1 mb-3">For Restaurants</h1>
+                            <h1 className="text-xl p-1 mb-3 text-white">For Restaurants</h1>
                             <ul>
                                 <li className="list-none text-gray-400 p-1"><a href="" className="">Partner With Us</a></li>
                                 <li className="list-none text-gray-400 p-1"><a href="" className="">Apps For You</a></li>
@@ -48,12 +48,12 @@ export default function Footer() {
                     </div>
                     <div className="section pl-30">
                         <div className="sub1">
-                            <h1 className="text-xl p-1 mb-3">Social links</h1>
+                            <h1 className="text-xl p-1 mb-3 text-white">Social links</h1>
                             <ul className='flex gap-2'>
-                                <li className="list-none text-white-400 p-1"><a href="" className=""><InstagramIcon/></a></li>
-                                <li className="list-none text-white-400 p-1"><a href="" className=""><YouTubeIcon/></a></li>
-                                <li className="list-none text-white-400 p-1"><a href="" className=""><XIcon/></a></li>
-                                <li className="list-none text-white-400 p-1"><a href="" className=""><LinkedInIcon/></a></li>
+                                <li className="list-none text-white p-1"><a href="" className=""><InstagramIcon/></a></li>
+                                <li className="list-none text-white p-1"><a href="" className=""><YouTubeIcon/></a></li>
+                                <li className="list-none text-white p-1"><a href="" className=""><XIcon/></a></li>
+                                <li className="list-none text-white p-1"><a href="" className=""><LinkedInIcon/></a></li>
                             </ul>
                         </div>
                     </div>
